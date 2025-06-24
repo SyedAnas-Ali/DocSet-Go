@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocSetGo Insights - Healthcare Blog | DocSetGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <svg
+              class="logo-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"
+              />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span class="logo-text">DocSetGo</span>
+          </a>
+
+          <nav class="nav desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="doc-online.html" class="nav-link">DocOnline</a>
+            <a href="appointment.html" class="nav-link">Book Appointment</a>
+            <a href="clinic-registration.html" class="nav-link"
+              >Register Clinic</a
+            >
+            <a href="blogs.html" class="nav-link active">Blogs</a>
+          </nav>
+
+          <div class="auth-buttons desktop-auth">
+            <a href="signin.html" class="auth-link">Sign In</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="doc-online.html" class="mobile-nav-link">DocOnline</a>
+            <a href="appointment.html" class="mobile-nav-link"
+              >Book Appointment</a
+            >
+            <a href="clinic-registration.html" class="mobile-nav-link"
+              >Register Clinic</a
+            >
+            <a href="blogs.html" class="mobile-nav-link">Blogs</a>
+            <div class="mobile-auth">
+              <a href="signin.html" class="mobile-nav-link">Sign In</a>
+              <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero blog-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">DocSetGo Insights</h1>
+          <p class="hero-subtitle">
+            Stay updated with the latest in healthcare technology, industry
+            trends, and platform updates
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+      <div class="container">
+        <div class="featured-content">
+          <div class="featured-text">
+            <div class="featured-badges">
+              <span class="badge featured-badge">Featured</span>
+              <span class="badge category-badge">Company Updates</span>
+            </div>
+
+            <h2>
+              2024 in Review – DocSetGo's Journey Toward Smarter Healthcare
+              Access
+            </h2>
+            <p>
+              Reflecting on a year of innovation, growth, and improved
+              healthcare accessibility across Pakistan. Discover the milestones
+              we achieved and the impact we made.
+            </p>
+
+            <div class="post-meta">
+              <div class="meta-item">
+                <svg
+                  class="meta-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>Ali Hassan</span>
+              </div>
+              <div class="meta-item">
+                <svg
+                  class="meta-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>December 28, 2024</span>
+              </div>
+              <div class="meta-item">
+                <svg
+                  class="meta-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                </svg>
+                <span>8 min read</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary">
+              Read Article
+              <svg
+                class="btn-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12,5 19,12 12,19" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop"
+              alt="DocSetGo 2024 Review"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+      <div class="container">
+        <h2 class="section-title">All Articles</h2>
+
+        <div class="category-pills">
+          <button class="category-pill active" data-category="all">All</button>
+          <button class="category-pill" data-category="company">
+            Company Updates
+          </button>
+          <button class="category-pill" data-category="healthtech">
+            Healthcare Tech
+          </button>
+          <button class="category-pill" data-category="digital">
+            Digital Health
+          </button>
+          <button class="category-pill" data-category="telemedicine">
+            Telemedicine
+          </button>
+          <button class="category-pill" data-category="privacy">
+            Privacy & Security
+          </button>
+          <button class="category-pill" data-category="mental">
+            Mental Health
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+      <div class="container">
+        <div class="articles-grid">
+          <article class="blog-card" data-category="healthtech">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop"
+                alt="HealthTech Documentation"
+              />
+            </div>
+
+            <div class="blog-content">
+              <div class="blog-header">
+                <span class="badge category-badge">Healthcare Tech</span>
+                <span class="read-time">6 min read</span>
+              </div>
+
+              <h3>Writing HealthTech Documentation That Works</h3>
+              <p>
+                Best practices for creating clear, comprehensive documentation
+                in healthcare technology. Learn how proper documentation
+                improves patient care and compliance.
+              </p>
+
+              <div class="blog-footer">
+                <div class="post-meta">
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Ayesha Rahman</span>
+                  </div>
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>December 20, 2024</span>
+                  </div>
+                </div>
+
+                <button class="read-more">
+                  Read More
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12,5 19,12 12,19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="digital">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop"
+                alt="Digital Health Documentation"
+              />
+            </div>
+
+            <div class="blog-content">
+              <div class="blog-header">
+                <span class="badge category-badge">Digital Health</span>
+                <span class="read-time">10 min read</span>
+              </div>
+
+              <h3>10 Inspiring Examples of Digital Health Documentation</h3>
+              <p>
+                Explore innovative approaches to health documentation that are
+                transforming patient care. From AI-powered records to blockchain
+                security.
+              </p>
+
+              <div class="blog-footer">
+                <div class="post-meta">
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Omar Farooq</span>
+                  </div>
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>December 15, 2024</span>
+                  </div>
+                </div>
+
+                <button class="read-more">
+                  Read More
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12,5 19,12 12,19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="telemedicine">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=250&fit=crop"
+                alt="Telemedicine Trends"
+              />
+            </div>
+
+            <div class="blog-content">
+              <div class="blog-header">
+                <span class="badge category-badge">Telemedicine</span>
+                <span class="read-time">7 min read</span>
+              </div>
+
+              <h3>Telemedicine Trends: What to Expect in 2025</h3>
+              <p>
+                The future of remote healthcare is here. Discover the emerging
+                trends and technologies that will shape telemedicine in the
+                coming year.
+              </p>
+
+              <div class="blog-footer">
+                <div class="post-meta">
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Dr. Sarah Khan</span>
+                  </div>
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>December 10, 2024</span>
+                  </div>
+                </div>
+
+                <button class="read-more">
+                  Read More
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12,5 19,12 12,19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="privacy">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop"
+                alt="Patient Privacy"
+              />
+            </div>
+
+            <div class="blog-content">
+              <div class="blog-header">
+                <span class="badge category-badge">Privacy & Security</span>
+                <span class="read-time">9 min read</span>
+              </div>
+
+              <h3>Patient Privacy in the Digital Age</h3>
+              <p>
+                Understanding HIPAA compliance and data protection in modern
+                healthcare platforms. Essential knowledge for patients and
+                providers.
+              </p>
+
+              <div class="blog-footer">
+                <div class="post-meta">
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Dr. Ahmed Malik</span>
+                  </div>
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>December 5, 2024</span>
+                  </div>
+                </div>
+
+                <button class="read-more">
+                  Read More
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12,5 19,12 12,19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="mental">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop"
+                alt="Mental Health Technology"
+              />
+            </div>
+
+            <div class="blog-content">
+              <div class="blog-header">
+                <span class="badge category-badge">Mental Health</span>
+                <span class="read-time">8 min read</span>
+              </div>
+
+              <h3>Mental Health Support Through Technology</h3>
+              <p>
+                How digital platforms are breaking barriers in mental health
+                care. Exploring the role of technology in providing accessible
+                mental health support.
+              </p>
+
+              <div class="blog-footer">
+                <div class="post-meta">
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Dr. Fatima Ali</span>
+                  </div>
+                  <div class="meta-item">
+                    <svg
+                      class="meta-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>November 28, 2024</span>
+                  </div>
+                </div>
+
+                <button class="read-more">
+                  Read More
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12,5 19,12 12,19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscribe -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to our newsletter for the latest healthcare insights and
+            platform updates
+          </p>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="newsletter-input"
+            />
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <svg
+                class="logo-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"
+                />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <span>DocSetGo</span>
+            </div>
+            <p>
+              Revolutionizing healthcare access in Pakistan with modern digital
+              solutions.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="doc-online.html">DocOnline</a>
+              <a href="appointment.html">Book Appointment</a>
+              <a href="clinic-registration.html">Register Clinic</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <div class="footer-links">
+              <a href="#">Video Consultations</a>
+              <a href="#">Appointment Booking</a>
+              <a href="#">Digital Prescriptions</a>
+              <a href="#">Health Records</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <p>📧 info@docsetgo.com</p>
+              <p>📞 (123) 456-7890</p>
+              <p>📍 123 Health St, Karachi, Pakistan</p>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="LinkedIn">💼</a>
+              <a href="#" aria-label="YouTube">📺</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 DocSetGo Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

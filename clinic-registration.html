@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Your Clinic | DocSetGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <svg
+              class="logo-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"
+              />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span class="logo-text">DocSetGo</span>
+          </a>
+
+          <nav class="nav desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="doc-online.html" class="nav-link">DocOnline</a>
+            <a href="appointment.html" class="nav-link">Book Appointment</a>
+            <a href="clinic-registration.html" class="nav-link active"
+              >Register Clinic</a
+            >
+            <a href="blogs.html" class="nav-link">Blogs</a>
+          </nav>
+
+          <div class="auth-buttons desktop-auth">
+            <a href="signin.html" class="auth-link">Sign In</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="doc-online.html" class="mobile-nav-link">DocOnline</a>
+            <a href="appointment.html" class="mobile-nav-link"
+              >Book Appointment</a
+            >
+            <a href="clinic-registration.html" class="mobile-nav-link"
+              >Register Clinic</a
+            >
+            <a href="blogs.html" class="mobile-nav-link">Blogs</a>
+            <div class="mobile-auth">
+              <a href="signin.html" class="mobile-nav-link">Sign In</a>
+              <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero form-hero">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-header">
+            <h1>Register Your Clinic</h1>
+            <p>
+              Join the DocSetGo network and expand your practice with our
+              digital healthcare platform.
+            </p>
+          </div>
+
+          <form class="clinic-form" id="clinicForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clinicName">Clinic/Practice Name *</label>
+                <input
+                  type="text"
+                  id="clinicName"
+                  name="clinicName"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="doctorName">Doctor's Full Name *</label>
+                <input
+                  type="text"
+                  id="doctorName"
+                  name="doctorName"
+                  required
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clinicEmail">Email Address *</label>
+                <input
+                  type="email"
+                  id="clinicEmail"
+                  name="clinicEmail"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="clinicPhone">Phone Number *</label>
+                <input
+                  type="tel"
+                  id="clinicPhone"
+                  name="clinicPhone"
+                  required
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clinicAddress">Clinic Address *</label>
+              <textarea
+                id="clinicAddress"
+                name="clinicAddress"
+                required
+                class="form-textarea"
+                rows="3"
+                placeholder="Enter complete address with city and postal code"
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clinicSpecialization"
+                  >Primary Specialization *</label
+                >
+                <select
+                  id="clinicSpecialization"
+                  name="clinicSpecialization"
+                  required
+                  class="form-select"
+                >
+                  <option value="">Select Specialization</option>
+                  <option value="general">General Practice</option>
+                  <option value="cardiology">Cardiology</option>
+                  <option value="dermatology">Dermatology</option>
+                  <option value="pediatrics">Pediatrics</option>
+                  <option value="orthopedics">Orthopedics</option>
+                  <option value="neurology">Neurology</option>
+                  <option value="ent">ENT</option>
+                  <option value="gynecology">Gynecology</option>
+                  <option value="psychiatry">Psychiatry</option>
+                  <option value="ophthalmology">Ophthalmology</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="experience">Years of Experience *</label>
+                <select
+                  id="experience"
+                  name="experience"
+                  required
+                  class="form-select"
+                >
+                  <option value="">Select Experience</option>
+                  <option value="1-5">1-5 years</option>
+                  <option value="6-10">6-10 years</option>
+                  <option value="11-15">11-15 years</option>
+                  <option value="16-20">16-20 years</option>
+                  <option value="20+">20+ years</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="consultationHours">Consultation Hours *</label>
+                <input
+                  type="text"
+                  id="consultationHours"
+                  name="consultationHours"
+                  required
+                  class="form-input"
+                  placeholder="e.g., Mon-Fri 9AM-5PM, Sat 9AM-2PM"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="licenseNumber">Medical License Number *</label>
+                <input
+                  type="text"
+                  id="licenseNumber"
+                  name="licenseNumber"
+                  required
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="certificate">Upload Medical Certificate *</label>
+              <input
+                type="file"
+                id="certificate"
+                name="certificate"
+                required
+                class="form-file"
+                accept=".pdf,.jpg,.jpeg,.png"
+              />
+              <small class="file-note"
+                >Upload your medical degree/certification (PDF, JPG, PNG - Max
+                5MB)</small
+              >
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="consultationFee">Consultation Fee (Rs.) *</label>
+                <input
+                  type="number"
+                  id="consultationFee"
+                  name="consultationFee"
+                  required
+                  class="form-input"
+                  min="500"
+                  placeholder="Enter your consultation fee"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="payoutMethod">Preferred Payout Method *</label>
+                <select
+                  id="payoutMethod"
+                  name="payoutMethod"
+                  required
+                  class="form-select"
+                >
+                  <option value="">Select Payout Method</option>
+                  <option value="bank">Bank Transfer</option>
+                  <option value="jazzcash">JazzCash</option>
+                  <option value="easypaisa">EasyPaisa</option>
+                  <option value="ubl">UBL Omni</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="aboutDoctor">About the Doctor</label>
+              <textarea
+                id="aboutDoctor"
+                name="aboutDoctor"
+                class="form-textarea"
+                rows="4"
+                placeholder="Brief description about your qualifications, experience, and expertise (optional)"
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required />
+                <span class="checkmark"></span>
+                I agree to the
+                <a href="#" class="link">Terms and Conditions</a> and
+                <a href="#" class="link">Privacy Policy</a> *
+              </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="registrationFee"
+                  name="registrationFee"
+                  required
+                />
+                <span class="checkmark"></span>
+                I agree to pay the one-time registration fee of Rs. 5,000 for
+                verified professionals *
+              </label>
+            </div>
+
+            <div class="registration-benefits">
+              <h3>Benefits of Joining DocSetGo</h3>
+              <ul>
+                <li>✅ Expand your patient base with online visibility</li>
+                <li>✅ Streamlined appointment management system</li>
+                <li>✅ Digital prescription and record keeping</li>
+                <li>✅ Secure payment processing</li>
+                <li>✅ 24/7 platform support</li>
+                <li>✅ Marketing support and professional profile</li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Register Clinic
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <svg
+                class="logo-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"
+                />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <span>DocSetGo</span>
+            </div>
+            <p>
+              Revolutionizing healthcare access in Pakistan with modern digital
+              solutions.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="doc-online.html">DocOnline</a>
+              <a href="appointment.html">Book Appointment</a>
+              <a href="clinic-registration.html">Register Clinic</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <div class="footer-links">
+              <a href="#">Video Consultations</a>
+              <a href="#">Appointment Booking</a>
+              <a href="#">Digital Prescriptions</a>
+              <a href="#">Health Records</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <p>📧 info@docsetgo.com</p>
+              <p>📞 (123) 456-7890</p>
+              <p>📍 123 Health St, Karachi, Pakistan</p>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="LinkedIn">💼</a>
+              <a href="#" aria-label="YouTube">📺</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 DocSetGo Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
